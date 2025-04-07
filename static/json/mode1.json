@@ -1,0 +1,212 @@
+[
+    {
+      "question": "Which word matches the pronunciation: 'cat'?",
+      "choices": ["cat", "kat", "cut"],
+      "answer": "cat",
+      "hint": "It rhymes with 'hat'.",
+      "difficulty": "Easy"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'knit'?",
+      "choices": ["nit", "knit", "neat"],
+      "answer": "knit",
+      "hint": "The 'k' at the beginning is silent.",
+      "difficulty": "Easy"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'phone'?",
+      "choices": ["fone", "phone", "pohn"],
+      "answer": "phone",
+      "hint": "'ph' sounds like 'f'.",
+      "difficulty": "Easy"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'ghost'?",
+      "choices": ["gost", "ghost", "goast"],
+      "answer": "ghost",
+      "hint": "It starts with 'gh'.",
+      "difficulty": "Easy"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'knock'?",
+      "choices": ["nock", "knock", "nok"],
+      "answer": "knock",
+      "hint": "The first letter is silent.",
+      "difficulty": "Easy"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'comb'?",
+      "choices": ["comb", "kom", "cohm"],
+      "answer": "comb",
+      "hint": "The last letter is silent.",
+      "difficulty": "Easy"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'chaos'?",
+      "choices": ["chaos", "kaos", "chayos"],
+      "answer": "chaos",
+      "hint": "The first two letters make a hard sound.",
+      "difficulty": "Easy"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'echo'?",
+      "choices": ["echo", "eko", "ecko"],
+      "answer": "echo",
+      "hint": "It starts with 'e' and makes a sharp sound.",
+      "difficulty": "Easy"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'scene'?",
+      "choices": ["scene", "sene", "seen"],
+      "answer": "scene",
+      "hint": "It starts with 'sc'.",
+      "difficulty": "Easy"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'wrap'?",
+      "choices": ["rap", "wrap", "wrapp"],
+      "answer": "wrap",
+      "hint": "It starts with 'wr'.",
+      "difficulty": "Easy"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'aisle'?",
+      "choices": ["aisle", "isle", "ile"],
+      "answer": "aisle",
+      "hint": "It has a silent 's'.",
+      "difficulty": "Medium"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'queue'?",
+      "choices": ["queue", "cue", "que"],
+      "answer": "queue",
+      "hint": "It looks longer than it sounds.",
+      "difficulty": "Medium"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'salmon'?",
+      "choices": ["salmon", "samon", "salmen"],
+      "answer": "salmon",
+      "hint": "The 'l' is not pronounced.",
+      "difficulty": "Medium"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'hour'?",
+      "choices": ["hour", "our", "howr"],
+      "answer": "hour",
+      "hint": "It starts with a silent 'h'.",
+      "difficulty": "Medium"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'subtle'?",
+      "choices": ["subtle", "sutle", "subtel"],
+      "answer": "subtle",
+      "hint": "It includes a silent letter in the middle.",
+      "difficulty": "Medium"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'cupboard'?",
+      "choices": ["cupboard", "cubboard", "cupbord"],
+      "answer": "cupboard",
+      "hint": "It sounds like 'cub-erd'.",
+      "difficulty": "Medium"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'island'?",
+      "choices": ["island", "iland", "iseland"],
+      "answer": "island",
+      "hint": "It has a silent 's'.",
+      "difficulty": "Medium"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'whistle'?",
+      "choices": ["whistle", "wistle", "whistel"],
+      "answer": "whistle",
+      "hint": "It starts with 'wh'.",
+      "difficulty": "Medium"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'scene'?",
+      "choices": ["scene", "sene", "seen"],
+      "answer": "scene",
+      "hint": "It starts with 'sc'.",
+      "difficulty": "Medium"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'gnome'?",
+      "choices": ["nome", "gnome", "g-nome"],
+      "answer": "gnome",
+      "hint": "It starts with a silent letter.",
+      "difficulty": "Medium"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'colonel'?",
+      "choices": ["colonel", "kernel", "kornel"],
+      "answer": "colonel",
+      "hint": "It sounds very different from how it looks.",
+      "difficulty": "Hard"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'yacht'?",
+      "choices": ["yacht", "yot", "yaught"],
+      "answer": "yacht",
+      "hint": "The spelling is tricky for this one!",
+      "difficulty": "Hard"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'psalm'?",
+      "choices": ["salm", "psalm", "p-salm"],
+      "answer": "psalm",
+      "hint": "The first letter is silent.",
+      "difficulty": "Hard"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'debt'?",
+      "choices": ["debt", "det", "debtt"],
+      "answer": "debt",
+      "hint": "It contains a silent 'b'.",
+      "difficulty": "Hard"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'doubt'?",
+      "choices": ["dout", "doubt", "doubt"],
+      "answer": "doubt",
+      "hint": "It also has a silent 'b'.",
+      "difficulty": "Hard"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'sword'?",
+      "choices": ["sword", "sord", "sward"],
+      "answer": "sword",
+      "hint": "The 'w' is not heard.",
+      "difficulty": "Hard"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'plumber'?",
+      "choices": ["plumber", "plumer", "ploumer"],
+      "answer": "plumber",
+      "hint": "The 'b' is silent.",
+      "difficulty": "Hard"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'castle'?",
+      "choices": ["castle", "kastle", "casel"],
+      "answer": "castle",
+      "hint": "The 't' is silent.",
+      "difficulty": "Hard"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'answer'?",
+      "choices": ["answer", "anser", "ansver"],
+      "answer": "answer",
+      "hint": "The 'w' is not pronounced.",
+      "difficulty": "Hard"
+    },
+    {
+      "question": "Which word matches the pronunciation: 'honor'?",
+      "choices": ["honor", "onor", "h-onor"],
+      "answer": "honor",
+      "hint": "It starts with a silent 'h'.",
+      "difficulty": "Hard"
+    }
+  ]

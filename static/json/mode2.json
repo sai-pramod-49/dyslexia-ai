@@ -1,0 +1,212 @@
+[
+  {
+    "word": "said",
+    "hint": "The spelling doesn't match the sound.",
+    "explanation": "The word is pronounced as said.",
+    "example_sentence": "He said he would come soon.",
+    "difficulty": "Easy"
+  },
+  {
+    "word": "busy",
+    "hint": "The middle letters sound different than they look.",
+    "explanation": "The word is pronounced as busy.",
+    "example_sentence": "She was too busy to answer the call.",
+    "difficulty": "Easy"
+  },
+  {
+    "word": "eye",
+    "hint": "It's not pronounced how it looks.",
+    "explanation": "The word is pronounced as eye.",
+    "example_sentence": "She hurt her eye while playing.",
+    "difficulty": "Easy"
+  },
+  {
+    "word": "friend",
+    "hint": "There's an unexpected 'i' in the spelling.",
+    "explanation": "The word is pronounced as friend.",
+    "example_sentence": "He is my best friend.",
+    "difficulty": "Easy"
+  },
+  {
+    "word": "again",
+    "hint": "The 'gain' part doesn't sound like 'gain'.",
+    "explanation": "The word is pronounced as again.",
+    "example_sentence": "Please do it again.",
+    "difficulty": "Easy"
+  },
+  {
+    "word": "does",
+    "hint": "This word ends with 's' but doesn't sound like it.",
+    "explanation": "The word is pronounced as does.",
+    "example_sentence": "She does her homework on time.",
+    "difficulty": "Easy"
+  },
+  {
+    "word": "one",
+    "hint": "The spelling doesn't suggest the 'w' sound.",
+    "explanation": "The word is pronounced as one.",
+    "example_sentence": "I have one book.",
+    "difficulty": "Easy"
+  },
+  {
+    "word": "was",
+    "hint": "The 'a' sounds more like a 'u'.",
+    "explanation": "The word is pronounced as was.",
+    "example_sentence": "He was there yesterday.",
+    "difficulty": "Easy"
+  },
+  {
+    "word": "some",
+    "hint": "The 'o' sounds like 'u'.",
+    "explanation": "The word is pronounced as some.",
+    "example_sentence": "Can I have some water?",
+    "difficulty": "Easy"
+  },
+  {
+    "word": "done",
+    "hint": "Looks like 'dohn', sounds like 'dun'.",
+    "explanation": "The word is pronounced as done.",
+    "example_sentence": "I'm done with my work.",
+    "difficulty": "Easy"
+  },
+  {
+    "word": "listen",
+    "hint": "It has a silent letter.",
+    "explanation": "The word is pronounced as listen.",
+    "example_sentence": "You should listen carefully.",
+    "difficulty": "Medium"
+  },
+  {
+    "word": "often",
+    "hint": "The 't' is usually silent.",
+    "explanation": "The word is pronounced as often.",
+    "example_sentence": "We often go for walks.",
+    "difficulty": "Medium"
+  },
+  {
+    "word": "knife",
+    "hint": "One letter at the beginning is silent.",
+    "explanation": "The word is pronounced as knife.",
+    "example_sentence": "Use a knife to cut the fruit.",
+    "difficulty": "Medium"
+  },
+  {
+    "word": "answer",
+    "hint": "It has a silent 'w'.",
+    "explanation": "The word is pronounced as answer.",
+    "example_sentence": "Can you answer the question?",
+    "difficulty": "Medium"
+  },
+  {
+    "word": "talk",
+    "hint": "One consonant at the end is silent.",
+    "explanation": "The word is pronounced as talk.",
+    "example_sentence": "Let's talk about it.",
+    "difficulty": "Medium"
+  },
+  {
+    "word": "subtle",
+    "hint": "The 'b' is not pronounced.",
+    "explanation": "The word is pronounced as subtle.",
+    "example_sentence": "There was a subtle change in her tone.",
+    "difficulty": "Medium"
+  },
+  {
+    "word": "autumn",
+    "hint": "There's a silent letter at the end.",
+    "explanation": "The word is pronounced as autumn.",
+    "example_sentence": "The leaves fall in autumn.",
+    "difficulty": "Medium"
+  },
+  {
+    "word": "aisle",
+    "hint": "Sounds very different from its spelling.",
+    "explanation": "The word is pronounced as aisle.",
+    "example_sentence": "He walked down the aisle.",
+    "difficulty": "Medium"
+  },
+  {
+    "word": "doubt",
+    "hint": "It has a silent 'b'.",
+    "explanation": "The word is pronounced as doubt.",
+    "example_sentence": "I have no doubt about it.",
+    "difficulty": "Medium"
+  },
+  {
+    "word": "debt",
+    "hint": "You don't say one of the letters.",
+    "explanation": "The word is pronounced as debt.",
+    "example_sentence": "He is in a lot of debt.",
+    "difficulty": "Medium"
+  },
+  {
+    "word": "yacht",
+    "hint": "It has an unconventional spelling.",
+    "explanation": "The word is pronounced as yacht.",
+    "example_sentence": "He sailed the yacht across the bay.",
+    "difficulty": "Hard"
+  },
+  {
+    "word": "colonel",
+    "hint": "It sounds nothing like it looks.",
+    "explanation": "The word is pronounced as colonel.",
+    "example_sentence": "The colonel gave the orders.",
+    "difficulty": "Hard"
+  },
+  {
+    "word": "bologna",
+    "hint": "Looks very different from how it'  s said.",
+    "explanation": "The word is pronounced as bologna.",
+    "example_sentence": "He made a bologna sandwich.",
+    "difficulty": "Hard"
+  },
+  {
+    "word": "receipt",
+    "hint": "One letter is silent.",
+    "explanation": "The word is pronounced as receipt.",
+    "example_sentence": "Keep your receipt for refund.",
+    "difficulty": "Hard"
+  },
+  {
+    "word": "hors d'oeuvre",
+    "hint": "It's borrowed from French.",
+    "explanation": "The word is pronounced as hors d'oeuvre.",
+    "example_sentence": "They served hors d'oeuvres at the party.",
+    "difficulty": "Hard"
+  },
+  {
+    "word": "rendezvous",
+    "hint": "It's not pronounced the way it's written.",
+    "explanation": "The word is pronounced as rendezvous.",
+    "example_sentence": "They had a secret rendezvous.",
+    "difficulty": "Hard"
+  },
+  {
+    "word": "genre",
+    "hint": "A tricky French-origin word.",
+    "explanation": "The word is pronounced as genre.",
+    "example_sentence": "What genre of movies do you like?",
+    "difficulty": "Hard"
+  },
+  {
+    "word": "aisle",
+    "hint": "It starts with a silent 'a'.",
+    "explanation": "The word is pronounced as aisle.",
+    "example_sentence": "He waited in the aisle.",
+    "difficulty": "Hard"
+  },
+  {
+    "word": "niche",
+    "hint": "French origin, not pronounced as spelled.",
+    "explanation": "The word is pronounced as niche.",
+    "example_sentence": "She found her niche in design.",
+    "difficulty": "Hard"
+  },
+  {
+    "word": "quay",
+    "hint": "Spelling doesn't reflect its sound.",
+    "explanation": "The word is pronounced as quay.",
+    "example_sentence": "Boats were docked at the quay.",
+    "difficulty": "Hard"
+  }
+]

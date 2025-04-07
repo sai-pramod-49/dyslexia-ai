@@ -1,0 +1,187 @@
+[
+  {
+    "category": "color",
+    "difficulty": "Easy",
+    "label": "red",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/red.png",
+    "answer": "red"
+  },
+  {
+    "category": "color",
+    "difficulty": "Easy",
+    "label": "blue",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/blue.png",
+    "answer": "blue"
+  },
+  {
+    "category": "color",
+    "difficulty": "Easy",
+    "label": "green",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/green.png",
+    "answer": "green"
+  },
+  {
+    "category": "color",
+    "difficulty": "Easy",
+    "label": "pink",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/pink.png",
+    "answer": "pink"
+  },
+  {
+    "category": "color",
+    "difficulty": "Medium",
+    "label": "purple",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/purple.png",
+    "answer": "purple"
+  },
+  {
+    "category": "color",
+    "difficulty": "Medium",
+    "label": "orange",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/orange.png",
+    "answer": "orange"
+  },
+  {
+    "category": "color",
+    "difficulty": "Hard",
+    "label": "maroon",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/maroon.png",
+    "answer": "maroon"
+  },
+
+  {
+    "category": "number",
+    "difficulty": "Easy",
+    "label": "one",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/one.png",
+    "answer": "one"
+  },
+  {
+    "category": "number",
+    "difficulty": "Easy",
+    "label": "three",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/three.png",
+    "answer": "three"
+  },
+  {
+    "category": "number",
+    "difficulty": "Easy",
+    "label": "five",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/five.png",
+    "answer": "five"
+  },
+  {
+    "category": "number",
+    "difficulty": "Medium",
+    "label": "seven",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/seven.png",
+    "answer": "seven"
+  },
+  {
+    "category": "number",
+    "difficulty": "Medium",
+    "label": "eleven",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/eleven.png",
+    "answer": "eleven"
+  },
+  {
+    "category": "number",
+    "difficulty": "Hard",
+    "label": "seventeen",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/seventeen.png",
+    "answer": "seventeen"
+  },
+  {
+    "category": "number",
+    "difficulty": "Hard",
+    "label": "nineteen",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/nineteen.png",
+    "answer": "nineteen"
+  },
+  {
+    "category": "number",
+    "difficulty": "Hard",
+    "label": "twenty-one",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/twenty-one.png",
+    "answer": "twenty-one"
+  },
+
+  {
+    "category": "object",
+    "difficulty": "Easy",
+    "label": "ball",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/football.png",
+    "answer": "ball"
+  },
+  {
+    "category": "object",
+    "difficulty": "Easy",
+    "label": "cup",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/cup.png",
+    "answer": "cup"
+  },
+  {
+    "category": "object",
+    "difficulty": "Easy",
+    "label": "book",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/book.png",
+    "answer": "book"
+  },
+  {
+    "category": "object",
+    "difficulty": "Medium",
+    "label": "pencil",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/pencil.png",
+    "answer": "pencil"
+  },
+  {
+    "category": "object",
+    "difficulty": "Medium",
+    "label": "scissors",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/scissors.png",
+    "answer": "scissors"
+  },
+  {
+    "category": "object",
+    "difficulty": "Medium",
+    "label": "ladder",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/ladder.png",
+    "answer": "ladder"
+  },
+  {
+    "category": "object",
+    "difficulty": "Hard",
+    "label": "microscope",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/microscope.png",
+    "answer": "microscope"
+  },
+  {
+    "category": "object",
+    "difficulty": "Hard",
+    "label": "helicopter",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/helicopter.png",
+    "answer": "helicopter"
+  },
+  {
+    "category": "object",
+    "difficulty": "Easy",
+    "label": "dog",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/dog.png",
+    "answer": "dog"
+  },
+  {
+    "category": "object",
+    "difficulty": "Medium",
+    "label": "giraffe",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/giraffe.png",
+    "answer": "giraffe"
+  },
+  {
+    "category": "object",
+    "difficulty": "Hard",
+    "label": "chameleon",
+    "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/chameleon.png",
+    "answer": "chameleon"
+  }
+]
+
