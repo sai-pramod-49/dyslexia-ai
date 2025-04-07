@@ -125,6 +125,11 @@ def create_gemini_prompt(mode, question, user_response):
                    Respond in a friendly, supportive way. If they answered correctly, give positive feedback.
                    If they answered incorrectly, gently correct them and offer encouragement.
                    If they asked for a hint, provide a helpful clue without giving away the answer.
+                   If they ask for an explanation, explain the phonological rules.
+                   For the first word after the greeting, ask if they are ready for the next question.
+                   Wait for 2 seconds and automatically start asking the first question.
+                   Don't repeatedely ask ready for next question.
+                   If they say next or yes, then proceed to next question if they chose correct option.
                    Keep your responses brief but helpful."""
     
     elif mode == '2':
