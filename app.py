@@ -103,6 +103,7 @@ def process_response():
     # Generate speech for AI response
     speech_file = text_to_speech(ai_response)
     
+    
     # Check if we need to move to next question
     if any(word in user_response.lower() for word in ['next', 'continue', 'yes']):
         advance_question = True
@@ -147,10 +148,6 @@ def create_gemini_prompt(mode, question, user_response):
                    Respond in a friendly, supportive way. If they answered correctly, give positive feedback.
                    If they answered incorrectly, gently correct them and offer encouragement.
                    If they asked for a hint, provide a helpful clue without giving away the answer.
-                   If they ask for an explanation, explain the phonological rules.
-                   For the first word after the greeting, ask if they are ready for the next question.
-                   Wait for 2 seconds and automatically start asking the first question.
-                   Don't repeatedely ask ready for next question.
                    If they say next or yes, then proceed to next question if they chose correct option an never speak about previous questions.
                    Keep your responses brief but helpful."""
     
@@ -163,6 +160,9 @@ def create_gemini_prompt(mode, question, user_response):
                    Respond in a friendly, supportive way. Check if their pronunciation was correct.
                    If they need help, explain how to pronounce the word.
                    If they ask for an explanation, explain the pronunciation rules.
+                   Don't give very lengthy explanations, just a few sentences.
+                   Don't repeat the question or ask if they are ready for the next question.
+                   If they say next or yes, then proceed to next question if they chose correct option an never speak about previous questions.
                    """
     
     else:  # Mode 3
@@ -172,9 +172,10 @@ def create_gemini_prompt(mode, question, user_response):
                    Difficulty: {question['difficulty']}
                    User response: {user_response}
                    
-                   Respond in a friendly, supportive way. Check if their answer was correct.
-                   Comment on their speed if relevant. Be encouraging regardless of performance.
-                   Keep responses brief but helpful."""
+                   This is rapid-fire mode, so keep your response to one short sentence.
+                    Just say if they're correct or not and we'll move quickly to the next question.
+                    If they're incorrect, just briefly correct them without detailed explanation.
+                   """
 
 def is_correct_answer(mode, question, user_response):
     if mode == '1':

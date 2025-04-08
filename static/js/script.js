@@ -180,8 +180,36 @@ function displayCurrentQuestion() {
         
     } else if (currentMode === '3') {
         // Mode 3: Rapid Naming Deficit
-        displayImage.src = currentQuestion.image;
-        displayImage.alt = currentQuestion.category;
+        
+        // Check if it's a number category
+        if (currentQuestion.category === 'number') {
+            // Display the number as text instead of image
+            displayImage.style.display = 'none';
+            
+            // Create a text display for the number if it doesn't exist
+            let numberDisplay = document.getElementById('number-display');
+            if (!numberDisplay) {
+                numberDisplay = document.createElement('div');
+                numberDisplay.id = 'number-display';
+                numberDisplay.className = 'number-display';
+                displayImage.parentNode.insertBefore(numberDisplay, displayImage);
+            } else {
+                numberDisplay.style.display = 'block';
+            }
+            
+            numberDisplay.textContent = currentQuestion.label;
+        } else {
+            // Regular image category
+            displayImage.style.display = 'block';
+            displayImage.src = currentQuestion.image;
+            displayImage.alt = currentQuestion.category;
+            
+            // Hide number display if it exists
+            const numberDisplay = document.getElementById('number-display');
+            if (numberDisplay) {
+                numberDisplay.style.display = 'none';
+            }
+        }
         
         // Set timer based on difficulty
         let seconds = 5; // Default easy
@@ -190,8 +218,11 @@ function displayCurrentQuestion() {
         } else if (currentQuestion.difficulty.toLowerCase() === 'hard') {
             seconds = 15;
         }
-        
         startTimer(seconds);
+        // Add delay before starting timer
+        addMessage("Get ready...", 'assistant');
+        
+        
     }
 }
 
@@ -212,8 +243,9 @@ function startTimer(seconds) {
         
         if (remaining <= 0) {
             clearInterval(timerInterval);
+            timerInterval = null;
             timeRemaining.textContent = '0';
-            addMessage("Time's up! What's your answer?", 'assistant');
+            addMessage("Time's up!", 'assistant');
         } else {
             timeRemaining.textContent = remaining;
         }
@@ -264,7 +296,14 @@ function sendUserInput() {
     addMessage(text, 'user');
 
     // If not a repeat, add user message to conversation
-   
+    if (currentMode === '3' && timerInterval) {
+        clearInterval(timerInterval);
+        timerInterval = null;
+        
+        // Calculate how much time was used
+        const elapsed = Math.floor((new Date() - startTime) / 1000);
+        timeRemaining.textContent = `Used: ${elapsed}`;
+    }
     
     // Send to server for processing
     fetch('/process_response', {
@@ -283,8 +322,11 @@ function sendUserInput() {
         if (!(currentMode === '1' && isRepeat)) {
             addMessage(data.response, 'assistant');
         }
+
         
         playAudio(data.speech_url);
+
+        
         
         // Check if we should move to next question
         if (data.next_question) {
@@ -292,6 +334,8 @@ function sendUserInput() {
             displayCurrentQuestion();
         }
         
+        
+
         // Check if we've reached the end of a mode
         if (data.end_of_mode) {
             showResults(data.score, data.question_count);

@@ -52,56 +52,56 @@
   {
     "category": "number",
     "difficulty": "Easy",
-    "label": "one",
+    "label": "1",
     "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/one.png",
     "answer": "one"
   },
   {
     "category": "number",
     "difficulty": "Easy",
-    "label": "three",
+    "label": "3",
     "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/three.png",
     "answer": "three"
   },
   {
     "category": "number",
     "difficulty": "Easy",
-    "label": "five",
+    "label": "5",
     "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/five.png",
     "answer": "five"
   },
   {
     "category": "number",
     "difficulty": "Medium",
-    "label": "seven",
+    "label": "7",
     "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/seven.png",
     "answer": "seven"
   },
   {
     "category": "number",
     "difficulty": "Medium",
-    "label": "eleven",
+    "label": "11",
     "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/eleven.png",
     "answer": "eleven"
   },
   {
     "category": "number",
     "difficulty": "Hard",
-    "label": "seventeen",
+    "label": "17",
     "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/seventeen.png",
     "answer": "seventeen"
   },
   {
     "category": "number",
     "difficulty": "Hard",
-    "label": "nineteen",
+    "label": "19",
     "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/nineteen.png",
     "answer": "nineteen"
   },
   {
     "category": "number",
     "difficulty": "Hard",
-    "label": "twenty-one",
+    "label": "21",
     "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/twenty-one.png",
     "answer": "twenty-one"
   },
@@ -109,9 +109,9 @@
   {
     "category": "object",
     "difficulty": "Easy",
-    "label": "ball",
+    "label": "football",
     "image": "https://raw.githubusercontent.com/sai-pramod-49/dyslexia-ai-assets/main/football.png",
-    "answer": "ball"
+    "answer": "football"
   },
   {
     "category": "object",
