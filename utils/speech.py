@@ -4,7 +4,7 @@ from gtts import gTTS
 import speech_recognition as sr
 
 # Text to Speech functionality using gTTS (clearer, better voice)
-def text_to_speech(text, lang='en', tld='com'):
+def text_to_speech(text, lang='en', tld='co.in'):
     # Create a unique filename for the audio
     filename = f"static/audio/speech_{uuid.uuid4()}.mp3"
     os.makedirs(os.path.dirname(filename), exist_ok=True)
@@ -35,3 +35,4 @@ def speech_to_text(timeout=5):
             return "UNRECOGNIZED"
         except Exception as e:
             return f"ERROR: {str(e)}"
+

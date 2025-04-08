@@ -111,6 +111,11 @@ function selectMode(mode) {
         // Set current question
         currentQuestion = data.question;
         displayCurrentQuestion();
+        if (mode === '1' && data.question_speech_url) {
+            setTimeout(() => {
+                playAudio(data.question_speech_url);
+            }, 10500); // small delay so it doesn't overlap with greeting
+        }
     })
     .catch(error => {
         console.error('Error selecting mode:', error);
@@ -139,9 +144,26 @@ function displayCurrentQuestion() {
     
     if (currentMode === '1') {
         // Mode 1: Phonological Dyslexia
-        questionText.textContent = currentQuestion.question;
+    
+        // Extract the word from the question
+        const match = currentQuestion.question.match(/'(.*?)'/);
+        const wordToHide = match ? match[1] : '';
+    
+        // Prepare question for display (without the word)
+        const cleanedQuestion = currentQuestion.question.replace(/'(.*?)'/, '').trim();
+        questionText.textContent = cleanedQuestion;
+    
+        fetch(`/generate_audio?text=${encodeURIComponent(currentQuestion.question)}`)
+            .then(response => response.json())
+            .then(data => {
+                // Introduce a small delay before playing (e.g., 200ms)
+                setTimeout(() => {
+                    playAudio(data.speech_url);
+                }, 8500);  // Adjust delay if needed
+            });
+    
+        // Show choices
         choicesContainer.innerHTML = '';
-        
         currentQuestion.choices.forEach(choice => {
             const button = document.createElement('button');
             button.className = 'choice-btn';
@@ -152,7 +174,6 @@ function displayCurrentQuestion() {
             });
             choicesContainer.appendChild(button);
         });
-        
     } else if (currentMode === '2') {
         // Mode 2: Surface Dyslexia
         displayWord.textContent = currentQuestion.word;
@@ -241,6 +262,9 @@ function sendUserInput() {
     
     // Add user message to conversation
     addMessage(text, 'user');
+
+    // If not a repeat, add user message to conversation
+   
     
     // Send to server for processing
     fetch('/process_response', {
@@ -252,8 +276,14 @@ function sendUserInput() {
     })
     .then(response => response.json())
     .then(data => {
+
+        const repeatCommands = ['repeat', 'repeat question', 'say again', 'can you repeat'];
+        const isRepeat = repeatCommands.includes(text.toLowerCase());
         // Display AI response
-        addMessage(data.response, 'assistant');
+        if (!(currentMode === '1' && isRepeat)) {
+            addMessage(data.response, 'assistant');
+        }
+        
         playAudio(data.speech_url);
         
         // Check if we should move to next question

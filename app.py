@@ -3,6 +3,7 @@ import json
 import os
 from utils.gemini_api import generate_response
 from utils.speech import text_to_speech
+import random
 
 app = Flask(__name__)
 app.secret_key = 'dyslexia_support_app'
@@ -11,7 +12,21 @@ app.secret_key = 'dyslexia_support_app'
 def load_data(mode):
     file_path = f'static/json/mode{mode}.json'
     with open(file_path, 'r') as file:
-        return json.load(file)
+        full_data = json.load(file)
+
+    # Organize questions by difficulty
+    easy = [q for q in full_data if q.get('difficulty', '').lower() == 'easy']
+    medium = [q for q in full_data if q.get('difficulty', '').lower() == 'medium']
+    hard = [q for q in full_data if q.get('difficulty', '').lower() == 'hard']
+
+    # Randomly pick 2 from each (if available)
+    selected = random.sample(easy, min(2, len(easy))) + \
+               random.sample(medium, min(2, len(medium))) + \
+               random.sample(hard, min(2, len(hard)))
+
+    # Shuffle the selected questions so they’re not in order
+    random.shuffle(selected)
+    return selected
 
 @app.route('/')
 def index():
@@ -37,16 +52,22 @@ def select_mode():
     # Add to history
     session['history'].append({"role": "assistant", "content": greeting})
     
+    first_question = get_current_question()
+    question_audio = None
+    if mode == '1' and first_question:
+        question_audio = text_to_speech(first_question.get('question', ''))
+
     return jsonify({
         'greeting': greeting,
         'speech_url': speech_file,
-        'mode': mode,
-        'question': get_current_question()
+        'question': first_question,
+        'mode': mode
     })
+
 
 def get_mode_greeting(mode):
     if mode == '1':
-        return "Welcome to Phonological Dyslexia practice. I'll pronounce a word, and you'll select the matching spelling. Ready for your first word?"
+        return "Welcome to Phonological Dyslexia practice. I'll pronounce a word, and you'll select the matching spelling."
     elif mode == '2':
         return "Welcome to Surface Dyslexia practice. I'll show you words that don't follow regular spelling rules. You'll need to pronounce them correctly. Ready to begin?"
     else:
@@ -83,8 +104,9 @@ def process_response():
     speech_file = text_to_speech(ai_response)
     
     # Check if we need to move to next question
-    if "next" in user_response.lower() or "continue" in user_response.lower():
+    if any(word in user_response.lower() for word in ['next', 'continue', 'yes']):
         advance_question = True
+
     else:
         # Let Gemini decide if we should advance
         advance_question = "let's move to the next question" in ai_response.lower()
@@ -129,7 +151,7 @@ def create_gemini_prompt(mode, question, user_response):
                    For the first word after the greeting, ask if they are ready for the next question.
                    Wait for 2 seconds and automatically start asking the first question.
                    Don't repeatedely ask ready for next question.
-                   If they say next or yes, then proceed to next question if they chose correct option.
+                   If they say next or yes, then proceed to next question if they chose correct option an never speak about previous questions.
                    Keep your responses brief but helpful."""
     
     elif mode == '2':
@@ -185,6 +207,19 @@ def finish():
         'score': score,
         'question_count': question_count
     })
+    
+from flask import request, jsonify
+from utils.speech import text_to_speech
+
+@app.route('/generate_audio')
+def generate_audio():
+    text = request.args.get('text', '')
+    if not text:
+        return jsonify({'error': 'No text provided'}), 400
+
+    audio_path = text_to_speech(text)
+    return jsonify({'speech_url': '/' + audio_path})  # So it resolves from static/
+
 
 if __name__ == '__main__':
     app.run(debug=True)

@@ -169,7 +169,7 @@
     },
     {
       "question": "Which word matches the pronunciation: 'doubt'?",
-      "choices": ["dout", "doubt", "doubt"],
+      "choices": ["dout", "dought", "doubt"],
       "answer": "doubt",
       "hint": "It also has a silent 'b'.",
       "difficulty": "Hard"
